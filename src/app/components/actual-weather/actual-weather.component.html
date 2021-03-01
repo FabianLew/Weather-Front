@@ -1,0 +1,19 @@
+<body>
+  <div class="box">
+    <form>
+      <span class="text-center">Weather</span>
+      <div class="input-container">
+        <input type="text" required="" #city/>
+        <label>City</label>
+      </div>
+      <span class ="text-result">
+        <p>City: {{weather.locationName}}</p>
+        <p>Country: {{weather.locationCountry}}</p>
+        <p>Temperature: {{weather.temperature}}</p>
+        <p>Wind speed: {{weather.windSpeed}}</p>
+        <p>Pressure: {{weather.pressure}}</p>
+      </span>
+      <button type="button" class="btn" (click)="showInfo(city.value)">submit</button>
+    </form>
+  </div>
+</body>
